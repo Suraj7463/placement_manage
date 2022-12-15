@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        .inputclass {
+            padding: 5px;
+            width: 100%;
+        }
+        
+        .buttonclass {
+            padding: 5px;
+            border-radius: 5px;
+            color: wheat;
+            background-color: blue;
+            margin-left: 9px;
+        }
+        
+        .buttonclass:hover {
+            background-color: white;
+            color: blue;
+        }
+        
+        #m {
+            color: green;
+            align-items: center;
+            margin-left: 550px;
+        }
+    </style>
+</head>
+
+<body bgcolor="red">
+    <form action="/crud">
+        <table celppading="5px" align="center" border="1px">
+            <tr>
+                <td colspan="2">
+                    <h1>Check Student Result</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Roll No</td>
+                <td><input type="text" name="rno" placeholder="enter roll no" class="inputclass"></td>
+            </tr>
+            <tr>
+                <td>Tech_round</td>
+                <td><input type="text" name="sub1" placeholder="enter Tech_round mark" class="inputclass"></td>
+            </tr>
+            <tr>
+                <td>Hr_round</td>
+                <td><input type="text" name="sub2" placeholder="enter Hr_round mark" class="inputclass"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Add" name="b" class="buttonclass">
+                    <input type="submit" value="Update" name="b" class="buttonclass">
+                    <input type="submit" value="Delete" name="b" class="buttonclass">
+                    <input type="submit" value="Result" name="b" class="buttonclass">
+                </td>
+            </tr>
+            <!-- Rollno <input type="text" name="rno"><br> Subject1
+            <input type="text" name="sub1"><br> Subject2
+            <input type="text" name="sub2"><br>
+            <input type="submit" value="Add" name="b">
+            <input type="submit" value="Update" name="b">
+            <input type="submit" value="Delete" name="b">
+            <input type="submit" value="Result" name="b"> -->
+
+            </h1>
+        </table>
+    </form>
+    <h1 id="m">{{msg}}</h1>
+</body>
+
+</html>
